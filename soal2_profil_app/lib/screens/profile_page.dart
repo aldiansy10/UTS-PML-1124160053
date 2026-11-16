@@ -56,10 +56,9 @@ class _ProfilePageState extends State<ProfilePage> {
           children: [
             UserAccountsDrawerHeader(
               accountName: Text(profile.name),
-              accountEmail: Text(profile.nim),
+              accountEmail: Text('${profile.nim} - ${profile.className}'),
               currentAccountPicture: const CircleAvatar(
-                backgroundColor: Colors.white,
-                child: Icon(Icons.person, size: 50, color: Colors.blue),
+                backgroundImage: AssetImage('assets/images/fotoku.jpg'),
               ),
             ),
             ListTile(
@@ -96,10 +95,10 @@ class _ProfilePageState extends State<ProfilePage> {
         child: Column(
           children: [
             const SizedBox(height: 20),
+            // Foto Profil Utama Menggunakan Aset Lokal
             const CircleAvatar(
               radius: 50,
-              backgroundColor: Colors.blue,
-              child: Icon(Icons.person, size: 60, color: Colors.white),
+              backgroundImage: AssetImage('assets/images/fotoku.jpg'),
             ),
             const SizedBox(height: 12),
             Text(
@@ -108,7 +107,7 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             const SizedBox(height: 4),
             Text(
-              '${profile.nim} - ${profile.className}',
+              '${profile.nim} | ${profile.className}',
               style: const TextStyle(fontSize: 16, color: Colors.grey),
             ),
             const Padding(
