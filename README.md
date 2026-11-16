@@ -38,6 +38,11 @@ soal2_profil_app/
 
 ## 📸 Dokumentasi Tampilan Aplikasi (Screenshot)
 
-| Halaman Login | Halaman Profil (Light Mode) | Halaman Profil (Dark Mode) |
-| :---: | :---: | :---: |
-| ![Login](soal2_profil_app/assets/images/login.jpg) | ![Light Mode](soal2_profil_app/assets/images/profile_light.jpg) | ![Dark Mode](soal2_profil_app/assets/images/profile_dark.jpg) |
+**1. Halaman Login**
+![Login](soal2_profil_app/assets/images/login.jpg)
+
+**2. Halaman Profil (Light Mode)**
+![Light Mode](soal2_profil_app/assets/images/profile_light.jpg)
+
+**3. Halaman Profil (Dark Mode)**
+![Dark Mode](soal2_profil_app/assets/images/profile_dark.jpg)
