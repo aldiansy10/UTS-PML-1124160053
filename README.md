@@ -21,7 +21,9 @@ Aplikasi mobile berbasis **Flutter** yang dikembangkan secara khusus untuk memen
 
 ---
 
+
 ## 📂 Struktur Direktori Proyek
+
 ```text
 soal2_profil_app/
 │
@@ -32,17 +34,21 @@ soal2_profil_app/
 │   └── main.dart          # Titik masuk utama aplikasi & konfigurasi tema
 ├── pubspec.yaml           # Konfigurasi dependensi dan aset
 └── README.md              # Dokumentasi proyek
-
+```
 
 ---
+
 
 ## 📸 Dokumentasi Tampilan Aplikasi (Screenshot)
 
 **1. Halaman Login**
+
 ![Login](https://raw.githubusercontent.com/aldiansy10/UTS-PML-1124160053/main/soal2_profil_app/assets/images/login.jpg)
 
 **2. Halaman Profil (Light Mode)**
+
 ![Light Mode](https://raw.githubusercontent.com/aldiansy10/UTS-PML-1124160053/main/soal2_profil_app/assets/images/profile_light.jpg)
 
 **3. Halaman Profil (Dark Mode)**
+
 ![Dark Mode](https://raw.githubusercontent.com/aldiansy10/UTS-PML-1124160053/main/soal2_profil_app/assets/images/profile_dark.jpg)
