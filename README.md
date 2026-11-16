@@ -40,4 +40,4 @@ soal2_profil_app/
 
 | Halaman Login | Halaman Profil (Light Mode) | Halaman Profil (Dark Mode) |
 | :---: | :---: | :---: |
-| ![Login](assets/images/login.jpg) | ![Light Mode](assets/images/profile_light.jpg) | ![Dark Mode](assets/images/profile_dark.jpg) |
+| ![Login](soal2_profil_app/assets/images/login.jpg) | ![Light Mode](soal2_profil_app/assets/images/profile_light.jpg) | ![Dark Mode](soal2_profil_app/assets/images/profile_dark.jpg) |
