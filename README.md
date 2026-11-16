@@ -1,5 +1,8 @@
 # 📱 Aplikasi Profil Mahasiswa - UTS Mobile
 
+link vidio youtobe :
+https://youtu.be/4-zBIy0T-2M
+
 Aplikasi mobile berbasis **Flutter** yang dikembangkan secara khusus untuk memenuhi Ujian Tengah Semester (UTS) mata kuliah **Pemrograman Mobile**.
 
 ---
