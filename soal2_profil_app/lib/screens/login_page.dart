@@ -10,7 +10,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
-  final _emailController = TextEditingController();
+  final _nimController = TextEditingController();
   final _passwordController = TextEditingController();
   bool _isLoading = false;
 
@@ -20,17 +20,36 @@ class _LoginPageState extends State<LoginPage> {
         _isLoading = true;
       });
 
-      // proses login buatan
+      // Proses validasi login NIM & Password
       Future.delayed(const Duration(seconds: 2), () {
+        if (!mounted) return;
         setState(() {
           _isLoading = false;
         });
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => const ProfilePage()),
-        );
+
+        if (_nimController.text.trim() == '1124160053' &&
+            _passwordController.text == 'aldi123') {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => const ProfilePage()),
+          );
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('NIM atau Password salah!'),
+              backgroundColor: Colors.red,
+            ),
+          );
+        }
       });
     }
+  }
+
+  @override
+  void dispose() {
+    _nimController.dispose();
+    _passwordController.dispose();
+    super.dispose();
   }
 
   @override
@@ -52,15 +71,15 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 const SizedBox(height: 32),
                 TextFormField(
-                  controller: _emailController,
+                  controller: _nimController,
+                  keyboardType: TextInputType.number,
                   decoration: const InputDecoration(
-                    labelText: 'Email Kampus',
+                    labelText: 'NIM',
                     border: OutlineInputBorder(),
-                    prefixIcon: Icon(Icons.email),
+                    prefixIcon: Icon(Icons.badge),
                   ),
                   validator: (val) {
-                    if (val == null || val.isEmpty) return 'Email wajib diisi ya';
-                    if (!val.contains('@')) return 'Format email salah';
+                    if (val == null || val.isEmpty) return 'NIM wajib diisi ya';
                     return null;
                   },
                 ),
